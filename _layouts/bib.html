@@ -1,6 +1,7 @@
 ---
 ---
 <!-- _layouts/bib.html -->
+{%- assign bibtex_show = true -%}
       <div class="row">
         <div class="col-sm-2 abbr">
         {%- if entry.abbr -%}
@@ -67,8 +68,8 @@
             {%- endif -%}
           {%- endfor %}
           </div>
-          {%- if entry.comment %}
-            <div>{{entry.comment}}</div>
+          {%- if entry.note %}
+            <div>{{entry.note}}</div>
           {%- endif %}
 
           <!-- Journal/Book title and date -->
@@ -97,7 +98,7 @@
           {%- if entry.arxiv %}
             <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
           {%- endif %}
-          {%- if entry.bibtex_show %}
+          {%- if bibtex_show %}
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
           {%- endif %}
           {%- if entry.html %}
@@ -149,7 +150,7 @@
           </div>
           {%- endif -%}
 
-          {% if entry.bibtex_show -%}
+          {% if bibtex_show -%}
           <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
