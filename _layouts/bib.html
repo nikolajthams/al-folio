@@ -24,9 +24,7 @@
           {%- for author in entry.author_array -%}
             {%- assign author_is_self = false -%}
             {%- if author.last == site.scholar.last_name%}
-              {%- if site.scholar.first_name contains author.first -%}
-                {%- assign author_is_self = true -%}
-              {%- endif -%}
+              {%- assign author_is_self = true -%}
             {%- endif -%}
             {%- assign coauthor_url = nil -%}
             {%- if site.data.coauthors[author.last] -%}
@@ -69,6 +67,9 @@
             {%- endif -%}
           {%- endfor %}
           </div>
+          {%- if entry.comment %}
+            <div>{{entry.comment}}</div>
+          {%- endif %}
 
           <!-- Journal/Book title and date -->
           {% if entry.type == "article" -%}
@@ -87,7 +88,7 @@
             {{ periodical | strip }}
           </div>
         {%- endif %}
-        
+
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.abstract %}
