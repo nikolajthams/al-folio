@@ -19,7 +19,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am a PhD student of Statistics at the [Copenhagen Causality Lab](https://www.math.ku.dk/english/research/spt/cocala/) with [Prof. Jonas Peters](http://web.math.ku.dk/~peters/).
 
-I have two bachelor degrees in Mathematics and Mathematical Economics and a master degree in Statistics, all from the University of Copenhagen. During my studies, I have spent semesters at University of Aarhus, University of Hong Kong and ETH Zürich.
+I have two bachelor degrees in Mathematics and Mathematical Economics and a master degree in Statistics, all from the University of Copenhagen. During my studies, I have spent semesters at University of Aarhus, University of Hong Kong, ETH Zürich and the Massachusetts Institute of Technology.
 
 I am interested in Mathematical Statistics, in particular in causal inference, graphical models, machine learning, optimization and dynamical systems.
 Feel free to reach out!
