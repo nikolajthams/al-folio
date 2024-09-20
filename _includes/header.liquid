@@ -109,7 +109,9 @@
             {% endif %}
           {% endfor %}
           <!-- My CV -->
-          <a class="nav-link" href=/assets/cv/CV.pdf> cv </a>
+          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
+            <a class="nav-link" href=/assets/cv/CV.pdf> cv </a>
+          </li>
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
